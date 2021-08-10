@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+
+        function test() {
+            return; // 함수 종료
+            console.log('test');
+        }
+
+        test();
+
+        // 매개변수는 여러개가 가능하다
+        function 더하기(a, b) {
+            return a+ b;
+            // 함수가 호출의 결과로 뱉어내는 값
+        }
+
+        const a = 더하기(10, 20);
+        console.log(a);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

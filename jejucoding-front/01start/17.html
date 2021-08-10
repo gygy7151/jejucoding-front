@@ -5,20 +5,24 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>로블록스 - 레이아웃 샘플 페이지</title>
-    <link rel="stylesheet" href="./04.css">
-    <style> body { font-size: 30px;
-    background-color: aquamarine !important;}</style>
-    <!-- /* important는 절대로 남발하지마세요 --> -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./08.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;800&display=swap" rel="stylesheet">">
+    <script src="17.js"></script>
 </head>
 <body>
 	<div class="page">
 
 		<!-- 페이지 헤더 시작 -->
 		<header class="global-header">
+            <div class="grid">
+                <div class="logo-wrapper">
 			<figure class="global-header-logo">
 				<img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Robloxlogo2019.png" alt="로블록스 로고">
 			</figure>
 			<h1>로블록스</h1>
+        </div>
 			<p class="global-header-desc">
 				로블록스(영어: Roblox)는 사용자가 게임을 프로그래밍하고, 다른 사용자가 만든 게임을 즐길 수 있는 온라인 게임 플랫폼 및 게임 제작 시스템이다.
 			</p>
@@ -27,16 +31,18 @@
 				<a href="#개발" class="global-menu-link">개발</a>
 				<a href="#평가_및_수익" class="global-menu-link">평가 및 수익</a>
 			</nav>
+        </div>
 		</header>
 		<!-- 페이지 헤더 끝 -->
 
-		<hr>
 
+        <div class="content-container">
 		<!-- 메인 콘텐츠 시작 -->
 		<main class="primary">
-			<section class="content-section content-section-first" id="로블록스_스튜디오">
+			<div class="grid">
+            <section class="content-section content-section-first" id="로블록스_스튜디오">
 				<header class="content-section-header">
-					<h2>로블록스 스튜디오</h2>
+					<h2 class="content-section-title site-title">로블록스 스튜디오</h2>
 					<a href="#" class="edit-btn js-edit-btn">편집</a>
 				</header>
 				<p class="content-section-para">
@@ -49,7 +55,7 @@
 
 			<section class="content-section" id="개발">
 				<header class="content-section-header">
-					<h2>개발</h2>
+					<h2 class="content-section-title">개발</h2>
 					<a href="#" class="edit-btn js-edit-btn">편집</a>
 				</header>
 				<p class="content-section-para">
@@ -62,7 +68,7 @@
 
 			<section class="content-section" id="평가_및_수익">
 				<header class="content-section-header">
-					<h2>평가 및 수익</h2>
+					<h2 class="content-section-title">평가 및 수익</h2>
 					<a href="#" class="edit-btn js-edit-btn">편집</a>
 				</header>
 				<p class="content-section-para">
@@ -72,30 +78,35 @@
 					017년 로블록스 개발자 컨퍼런스에서 관계자는 2017년 게임 플랫폼의 제작자가 약 170만명이라고 말했다.[67] 총 수입이 최소 $30,000,000이다.[68] 로블록스의 iOS 버전은 2019년 11월에 10억 달러의 매출을 기록하였고, 2020년 6월에 15억 달러를 넘어서 두 번째로 높은 매출을 기록한 iOS 앱이 되었다.
 				</p>
 			</section>
+        </div>
 		</main>
 		<!-- 메인 콘텐츠 끝 -->
 		
-		<hr>
 		
 		<!-- 광고 시작 -->
 		<aside class="ad">
+            <div class="grid">
 			<a href="https://ko.wikipedia.org/wiki/마인크래프트" class="ad-banner">
 				<img src="https://upload.wikimedia.org/wikipedia/ko/f/f0/%EB%A7%88%EC%9D%B8%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8_%ED%91%9C%EC%A7%80.jpg" alt="마인크래프트">
 			</a>
 			<p class="ad-desc">
 				마인크래프트는 스웨덴의 게임 개발사 모장 스튜디오가 제작한 샌드박스 비디오 게임이다. 마르쿠스 페르손이 자바 프로그래밍 언어로 개발해 2009년 5월 처음 대중에 공개했으며, 옌스 베리엔스텐이 총괄 디자이너직을 이어받으면서 2011년 11월 18일 정식판이 출시됐다. 처음에는 윈도우, macOS 및 리눅스 운영 체제를 사용하는 가정용 컴퓨터용으로 발매됐으나 이후 가정용 및 휴대용 콘솔 등 다양한 기기로 이식됐다. 《마인크래프트》는 2020년 기준으로 월간 1억 2600만 명의 이용자가 사용하고 2억 장의 판매량을 기록해 역대 가장 많이 팔린 비디오 게임 중 하나이다.
 			</p>
+        </div>
 		</aside>
 		<!-- 광고 끝 -->
 
-		<hr>
+
+        </div>
 
 		<!-- 페이지 풋터 시작 -->
 		<footer class="global-footer">
-			<p class="global-footer-desc">제주코딩베이스캠프 HTML 예제</p>
+			<div class="grid">
+            <p class="global-footer-desc">제주코딩베이스캠프 HTML 예제</p>
 			<cite>
 				내용 출처: <a href="https://ko.wikipedia.org/wiki/로블록스">위키백과 로블록스</a>
 			</cite>
+        </div>
 		</footer>
 		<!-- 페이지 풋터 끝 -->
 

@@ -1,0 +1,58 @@
+body {
+    font-family: 'Gothic A1', sans-serif;
+    background-color: bisque;
+    line-height: 1.4em;
+}
+
+/* 이건 리셋파일에 넣기도한다. */
+img {
+    /* 최대로 늘어날수 있는 내폭은 내부모의 width다 */
+    max-width: 100%;
+}
+
+/* .global-header-logo 
+    /* width: 400px; 
+ */
+
+ .grid {
+     padding: 20px;
+ }
+
+ .site-title {
+     font-size: 3em;
+ }
+
+
+ .global-heaader {
+     font-size:12px;
+
+ }
+
+ .content-section-para {
+    margin-bottom: 1.5em;
+    font-size: 15px;
+ }
+
+ /* 창폭이 1000px이상일때만 적용되는 css */
+ @media (min-width: 1000px) {
+
+    .content-container {
+        display: flex;
+    }
+
+    .primary {
+        width: 60%;
+    }
+   
+    .ad {
+        width: 40%;
+    }
+
+ } 
+
+
+ @media (max-width: 600px) {
+     body {
+         background-color: darkseagreen;
+     }
+ }

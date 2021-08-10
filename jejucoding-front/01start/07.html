@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS박스모델</title>
+    <style>
+        .box {
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    padding: 50px;
+    background: lime;
+    /* 컨텐츠 사이즈 기준으로 잡으면  */
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+    /* 전체가 1200먼저 잡고 여백을 생각하니깐border-box가 훨씬 좋음 */
+}
+    </style>
+</head>
+<body>
+    <div class="box">BOX</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.box {
+    /* 기본값이 block임 */
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+
+p {
+    display : block;
+    background: skyblue;
+}
+
+a {
+
+}
+
+strong {
+    display: inline;
+    background-color: green;
+    font-size: 50px;
+}
+

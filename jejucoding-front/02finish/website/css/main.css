@@ -139,7 +139,8 @@ input[type='email'] {
 }
 
 .global-menu {
-    display: none;
+    /* display: none; 원래는 눈에 안보인다는거 나중에 보였다 안보였다를 js로 제어할거임 */
+    /* position: absolute 애는고정은 아니고 딸려올라가는애고 */
     position: fixed;
     top: 0;
     left: 0;
@@ -149,6 +150,9 @@ input[type='email'] {
     padding: 2em;
     color: white;
     background: rgba(0, 0, 0,0.8);
+    transform: translateX(-100vw);
+    /* 몇초동안 실행할건지 시간을 정해줘야됨 */
+    transition: 0.5s;
 }
 
 .global-menu-nav {
@@ -167,6 +171,10 @@ input[type='email'] {
     text-shadow: rgba(0, 0, 0, 0.3) 0 0 0.3em;
 }
 
+.global-menu {
+    transform: translateX(0);
+}
+
 .global-menu .icon-btn {
     color: white;
 }
@@ -177,7 +185,9 @@ input[type='email'] {
 }
 
 .menu-on .global-menu {
-    display: block;
+    /* none에서 block으로 바뀌는 거라 */
+    /* display: block; */
+    transform: translateX(0);
 }
 
 .text-input-and-btn {

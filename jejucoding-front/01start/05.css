@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	/* box-sizing: border-box 추가 */
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 코딩컨벤션에 따라서 한줄로 해도 됨 */
+/* 수동으로 css압축하는 방법이 있다.
+css minify를 키워드로 검색하면 됨
+*/
+body {
+    background-color: white;
+    font-size: 18px;
+}
+
+h1 {
+    color: red;
+}
+
+/* 그냥 보통 컬러정도만 맞춰준다 너무 구체적이면 다른곳에서 또 수정해주어야하므로 비효율적이다 */
+a {
+    /* 파란게 싫어서  */
+    color:black;
+    /* 원래 밑줄 있는걸 없애기 */
+    text-decoration: none;
+    /* 바닥에만 점선 보더가 들어가게끔 */
+    border-bottom: 2px dashed black;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+/* 백그라운드 컬러와 백그라운드 속성 차이가 있다. 백그라운드는 이미지 백그라운드 컬러 백그라운드 포지션이 속성이 있다 */
+.class-header {
+    background: skyblue;
+}
+
+.content-section-title {
+    border: 3px solid blue;
+}
+
+.content-section {
+    /* 외부여백 마진 */
+    margin: 20px;
+    padding: 20px;
+    background-color: blueviolet;
+}
+
+.content-section-first {
+    border: 2px solid red;
+}
+
+.edit-btn {
+    background:green;
+    color: white;
+    border:none;
+}
+
+/* 부모자식 ..요소이름가지고 선택자를 선택하는건 비추 언제? 해당요소가 위치가 변동될 수 도 있는데 그때 css스타일이 적용안되는 문제가 발생할 수 있으므로,
+클래스를 사용하는걸 추천. 요소가 진짜 디폴트 셋팅..css설정은 위에서 설정하면 아래 클래스에서 다시 씌워진다.*/
+aside p {
+    font-style: italic;
+}
+
+/* 순서지정 */
+/* 콜론(:)붙은게 가상클래스임 */
+.content-section:first-child {
+    font-size: 20px;
+}
+
+.content-section:last-child {
+    font-weight: bold;
+}
+
+.content-section:nth-child(2) {
+    background-color: pink;
+}
